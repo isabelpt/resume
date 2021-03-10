@@ -10087,7 +10087,7 @@ p.lead {
   margin-right: 0;
 }
 .social-icons .social-icon:hover {
-  background-color: #bd5d38;
+  background-color: #4167a6;
 }
 
 .dev-icons {
@@ -10119,4 +10119,16 @@ section.resume-section .resume-section-content {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
+}
+
+#books {
+    width: 48%;
+    clear: none;
+    float: left;
+}
+
+#songs {
+    width: 48%;
+    clear: none;
+    float: right;
 }
