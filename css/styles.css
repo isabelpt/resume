@@ -10132,3 +10132,8 @@ section.resume-section .resume-section-content {
     clear: none;
     float: right;
 }
+
+.txt-rotate {
+    color: #4167a6;
+    font-weight: 600;
+}
