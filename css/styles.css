@@ -10137,3 +10137,22 @@ section.resume-section .resume-section-content {
     color: #4167a6;
     font-weight: 600;
 }
+
+#quiz {
+    width: 90%;
+    margin: 5%;
+    text-align: center;
+    background-color: #4167a6;
+    color: white;
+}
+
+#kwk-description {
+    display: none;
+}
+
+#kwk:hover + #kwk-description {
+    display: block;
+    background-color: #4167a6;
+    color: white;
+    padding: 2%;
+}
