@@ -151,7 +151,7 @@
                     <h2 class="mb-5">Interests</h2>
                     <p>When I'm not in school or coding, I am usually outside. I love skiing, scuba diving, hiking, biking, and anything else that gets me outside. I currently live in New York, but this summer I am moving to Northern California.</p>
                     <p class="mb-0">I spend my free time <a>reading</a>, cross stitching, <a>listening to music</a>, learning about coral, baking, going on boat rides with my dad, and knitting.</p><br>
-                    <div id="books">
+                    <div class="books">
                     <div class="subheading mb-3">Favorite Books</div>
                           <!-- Show static HTML/CSS as a placeholder in case js is not enabled - javascript include will override this if things work -->
                           <style type="text/css" media="screen">
@@ -277,9 +277,37 @@
                           </div>
                           <script src="https://www.goodreads.com/review/custom_widget/125316134.isabel%20's%20bookshelf:%20favorites?cover_position=left&cover_size=small&num_books=5&order=a&shelf=favorites&show_author=1&show_cover=1&show_rating=1&show_review=1&show_tags=0&show_title=1&sort=date_added&widget_bg_color=FFFFFF&widget_bg_transparent=true&widget_border_width=1&widget_id=1615344565&widget_text_color=000000&widget_title_size=small&widget_width=wide" type="text/javascript" charset="utf-8"></script>
                         </div>
-                    <div id="songs">
+                    <div class="songs">
                         <div class="subheading mb-3">Favorite Songs</div>
                         <iframe src="https://open.spotify.com/embed/playlist/40FtFY3h76v8Pih6x0nSuI" width="80%" height="399" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                    <div class="books">
+                        <div class="subheading mb-3" id="squash">Fun Facts</div>
+                        <ul>
+                            <li>I'm terrified of butterflies</li>
+                            <li>I've been to over 10 countries and 13 states</li>
+                            <li>My favorite game on the Wii is Wii Tennis</li>
+                            <li>I'm a vegetarian who's allergic to ~20 different fruits and vegetables</li>
+                            <li>I collect fun socks</li>
+                            <li>My dream is to be on the Great British Baking Show</li>
+                            <li>Pitch Perfect is my comfort movie</li>
+                            <li>I listened to over 900 straight hours (37.5 days!) of Taylor Swift in 2020</li>
+                            <li>I used to fence</li>
+                            <li>My nicknames are Izzy, Isa, Seven, Shcmizz, and Sizzles</li>
+                            <li>My favorite subject in school has always been math</li>
+                            <li>I love rain</li>
+                            <li>I read and journal every night before I go to bed</li>
+                            <li>My favorite music producer is Jack Antonoff</li>
+                            <li>I love baking earl gray cookies</li>
+                            <li>My favorite restaurant is Bar Pitti in NYC, I've been going there since I was little</li>
+                            <li>My phone isin millitary time</li>
+                        </ul>
+                    </div>
+                    <div class="songs">
+                        <div class="subheading mb-3" id="squash">Images</div>
+                        <button type="button" id="ahhh" onclick="display_image();" class="btn btn-info" data->Random Image</button>
+                        <br><br>
+                        <img id="sleep">
                     </div>
                 </div>
             </section>
@@ -289,40 +317,78 @@
                 <div class="resume-section-content">
                     <h2 class="mb-5">Awards &amp; Accomplishments</h2>
                     <ul class="fa-ul mb-0">
-                        <li>
+                        <li data-toggle="collapse" data-target="#ncwit-description">
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            <a href="https://www.ncwit.org/project/aspirations-computing" target = "_blank">NCWIT</a> Greater NYC Affiliate Rising Star &#124; 2021
+                            <a href="https://www.ncwit.org/project/aspirations-computing" target = "_blank" class = "linkielink">NCWIT</a> Greater NYC Affiliate Rising Star &#124; 2021
                         </li>
-                        <li>
+                        <div id="ncwit-description" class="collapse">
+                            <ul>
+                                <li>Recognized as a 2021 NCWIT Greater NYC Affiliate Rising Star Award for Aspirations in Computing</li>
+                            </ul>
+                        </div>
+                        <li data-toggle="collapse" data-target="#cac-description">
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            <a href="https://www.congressionalappchallenge.us/" target = "_blank">Congressional App Challenge</a> NY-12 Winner &#124; 2020
+                            <a class = "linkielink" href="https://www.congressionalappchallenge.us/" target = "_blank">Congressional App Challenge</a> NY-12 Winner &#124; 2020
                         </li>
-                        <li id = "kwk">
+                        <div id="cac-description" class="collapse">
+                            <ul>
+                                <li>Won the Congressional App Challenge for NY-12 for the app I developed, PrideGuru</li>
+                                <li>PrideGuru aims to educate people on the LGBTQ+ community, so they can be better allies</li>
+                                <li><a href="https://www.youtube.com/watch?v=k6KK2g1NgAM&list=LL&index=8&t=6s" target="_blank">Check out the app!</a></li>
+                            </ul>
+                        </div>
+                        <li id = "kwk" data-toggle="collapse" data-target="#kwk-description">
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            <a href="https://www.kodewithklossy.com/" target = "_blank">Kode With Klossy</a> Mobile App Development Scholarship Recipient &#124; 2020
+                            <a href="https://www.kodewithklossy.com/" target = "_blank" class = "linkielink">Kode With Klossy</a> Mobile App Development Scholarship Recipient &#124; 2020
                         </li>
-                            <div id = "kwk-description">
-                                <p>Selected to receive a scholarship for a two-week, intensive summer program dedicated to educating and empowering young women and non-binary students in STEAM<br>
-                                Used Swift to develop an app to educate people on sustainable alternatives to everyday products<br>
-                                Collaborated with other team members through software process and cycle, including pitching, wireframing, developing, and presenting the first iteration of an app</p>
+                        <div id="kwk-description" class="collapse">
+                            <ul>
+                                <li>
+                                     Selected to receive a scholarship for a two-week, intensive summer program dedicated to educating and empowering young women and non-binary students in STEAM
+                                </li>
+                                <li>
+                                    Used Swift to develop an app to educate people on sustainable alternatives to everyday products
+                                </li>
+                                <li>
+                                    Collaborated with other team members through software process and cycle, including pitching, wireframing, developing, and presenting the first iteration of an app
+                                </li>
+                            </ul>
                             </div>
-                        <li>
+                        <li data-toggle="collapse" data-target="#ftc-description">
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
                             2
                             <sup>nd</sup>
-                            Place - <a href="https://www.firstinspires.org/robotics/ftc" target = "_blank">First Tech Challenge</a>  Regional Competition &#124; 2020
+                            Place - <a class = "linkielink" href="https://www.firstinspires.org/robotics/ftc" target = "_blank">First Tech Challenge</a>  Regional Competition &#124; 2020
                         </li>
-                        <li>
+                        <div id="ftc-description" class="collapse">
+                            <ul>
+                                <li>2<sup>nd</sup> place in NYC regional competition as a rookie team</li>
+                                <li>Received golden ticket to state championships</li>
+                            </ul>
+                        </div>
+                        <li data-toggle="collapse" data-target="#vexiq-description">
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
                             1
                             <sup>st</sup>
-                            Place - <a href="https://www.vexrobotics.com/iq/competition" target = "_blank">Vex IQ</a> New York State Championships &#124; 2018
+                            Place - <a class = "linkielink" href="https://www.vexrobotics.com/iq/competition" target = "_blank">Vex IQ</a> New York State Championships &#124; 2018
                         </li>
-                        <li>
+                        <div id="vexiq-description" class="collapse">
+                            <ul>
+                                <li>Teamwork Champion at the 2018 Vex IQ NYS State Championships</li>
+                                <li>Team 11442A (2017-2018)</li>
+                                <li><a href="https://www.hewittschool.org/about/news/story/~board/articles/post/the-future-is-bright-for-hewitt-robotics" target="_blank">More information and photos</a></li>
+                            </ul>
+                        </div>
+                        <li data-toggle="collapse" data-target="#vexiqchamps-description">
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            <a href="https://www.robotevents.com/robot-competitions/vex-iq-challenge/RE-VIQC-17-2720.html" target = "_blank">Vex IQ World Championships</a> in Louisville, KY &#124; 2018
-
+                            <a class = "linkielink" href="https://www.robotevents.com/robot-competitions/vex-iq-challenge/RE-VIQC-17-2720.html" target = "_blank">Vex IQ World Championships</a> in Louisville, KY &#124; 2018
                         </li>
+                        <div id="vexiqchamps-description" class="collapse">
+                            <ul>
+                                <li>Attended the 2018 Vex IQ World Championships in Louisville, Kentuky</li>
+                                <li><a href="https://www.hewittschool.org/about/news/story/~board/articles/post/the-future-is-bright-for-hewitt-robotics" target="_blank">More information and photos</a></li>
+                            </ul>
+                        </div>
                     </ul>
                 </div>
             </section>
@@ -331,10 +397,12 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Bootstrap and Jquery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <!-- Third party plugin JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <script src="js/typingeffect.js"></script>
     </body>
 </html>

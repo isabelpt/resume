@@ -159,12 +159,12 @@ sup {
 }
 
 a {
-  color: #bd5d38;
+  color: #007ccf;
   text-decoration: none;
   background-color: transparent;
 }
 a:hover {
-  color: #824027;
+  color: #4167a6;
   text-decoration: underline;
 }
 
@@ -10121,13 +10121,13 @@ section.resume-section .resume-section-content {
   }
 }
 
-#books {
+.books {
     width: 48%;
     clear: none;
     float: left;
 }
 
-#songs {
+.songs {
     width: 48%;
     clear: none;
     float: right;
@@ -10146,13 +10146,23 @@ section.resume-section .resume-section-content {
     color: white;
 }
 
-#kwk-description {
-    display: none;
+.linkielink {
+    color: #007ccf;
 }
 
-#kwk:hover + #kwk-description {
-    display: block;
+#squash {
+   padding-top: 5%;
+   clear: both;
+}
+
+#sleep {
+    width: 80%;
+    clear: both;
+    
+}
+
+button {
+    clear: both;
     background-color: #4167a6;
-    color: white;
-    padding: 2%;
+    color: #4167a6;
 }
